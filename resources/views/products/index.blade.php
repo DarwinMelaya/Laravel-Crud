@@ -122,24 +122,30 @@
     </div>
 
     <!-- Delete Confirmation Modal -->
-    <div id="deleteModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden overflow-y-auto h-full w-full">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-            <div class="mt-3 text-center">
-                <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
-                    <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div id="deleteModal" class="fixed inset-0 backdrop-blur-sm bg-black/50 hidden overflow-y-auto h-full w-full transition-opacity duration-300">
+        <div class="relative top-1/2 -translate-y-1/2 mx-auto p-6 border-0 w-[480px] shadow-2xl rounded-2xl bg-white transform transition-all duration-300">
+            <div class="text-center">
+                <!-- Warning Icon -->
+                <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6">
+                    <svg class="h-8 w-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg leading-6 font-medium text-gray-900 mt-4">Delete Product</h3>
-                <div class="mt-2 px-7 py-3">
-                    <p class="text-sm text-gray-500">Are you sure you want to delete <span id="productName" class="font-medium"></span>? This action cannot be undone.</p>
+                
+                <!-- Content -->
+                <h3 class="text-xl leading-6 font-semibold text-gray-900 mb-2">Delete Product</h3>
+                <div class="mt-2 px-1">
+                    <p class="text-gray-600">Are you sure you want to delete <span id="productName" class="font-semibold text-gray-900"></span>?</p>
+                    <p class="text-sm text-gray-500 mt-1">This action cannot be undone.</p>
                 </div>
-                <div class="flex justify-center gap-4 mt-4">
-                    <button id="cancelButton" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md">
+
+                <!-- Buttons -->
+                <div class="flex justify-center gap-3 mt-8">
+                    <button id="cancelButton" class="flex-1 max-w-[160px] px-5 py-2.5 bg-gray-50 hover:bg-gray-100 text-gray-700 text-sm font-medium rounded-lg border border-gray-300 transition-colors duration-200">
                         Cancel
                     </button>
-                    <button id="confirmButton" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-md">
-                        Delete
+                    <button id="confirmButton" class="flex-1 max-w-[160px] px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-lg transition-colors duration-200">
+                        Delete Product
                     </button>
                 </div>
             </div>
