@@ -65,7 +65,7 @@
                                     <div class="flex items-center">
                                         <div>
                                             <div class="text-sm font-medium text-gray-900">{{ $product->name }}</div>
-                                            <div class="text-sm text-gray-500 truncate max-w-xs">{{ $product->description }}</div>
+                                            <div class="text-sm text-gray-500 truncate max-w-xs">{{ $product->type }}</div>
                                         </div>
                                     </div>
                                 </td>

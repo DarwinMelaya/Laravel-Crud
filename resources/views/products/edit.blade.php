@@ -76,9 +76,9 @@
                         </div>
 
                         <div>
-                            <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
-                            <textarea name="description" id="description" rows="4"
-                                     class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">{{ $product->description }}</textarea>
+                            <label for="type" class="block text-sm font-medium text-gray-700 mb-1">Type</label>
+                            <textarea name="type" id="type" rows="4"
+                                     class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">{{ $product->type }}</textarea>
                         </div>
 
                         <div class="flex justify-end gap-3 pt-4">

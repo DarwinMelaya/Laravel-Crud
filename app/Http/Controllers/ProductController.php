@@ -22,11 +22,11 @@ class ProductController extends Controller
             'name' => 'required',
             'qty' => 'required|numeric',
             'price' => 'required|decimal:0,2',
-            'description' => 'nullable|string'
+            'type' => 'nullable|string'
         ]);
 
-        // Convert empty description to null or empty string
-        $data['description'] = $data['description'] ?? '';
+        // Convert empty type to null or empty string
+        $data['type'] = $data['type'] ?? '';
 
         $newProduct = Product::create($data);
 
@@ -44,7 +44,7 @@ class ProductController extends Controller
             'name' => 'required',
             'qty' => 'required|numeric',
             'price' => 'required|decimal:0,2',
-            'description' => 'nullable'
+            'type' => 'nullable'
         ]);
 
         $product->update($data);
