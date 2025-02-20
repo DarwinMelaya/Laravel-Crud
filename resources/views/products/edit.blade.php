@@ -18,7 +18,7 @@
         <!-- Header Section -->
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <div>
-                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Edit Product</h1>
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-500">Edit Product</h1>
                 <p class="mt-1 text-sm text-gray-600">Update product information</p>
             </div>
             
@@ -54,13 +54,13 @@
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
                                 <input type="text" name="name" id="name" value="{{ $product->name }}"
-                                       class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                      class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                             </div>
 
                             <div>
                                 <label for="qty" class="block text-sm font-medium text-gray-700 mb-1">Quantity in Stock</label>
                                 <input type="number" name="qty" id="qty" value="{{ $product->qty }}"
-                                       class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                      class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                             </div>
                         </div>
 
@@ -78,7 +78,7 @@
                         <div>
                             <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
                             <textarea name="description" id="description" rows="4"
-                                      class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">{{ $product->description }}</textarea>
+                                     class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">{{ $product->description }}</textarea>
                         </div>
 
                         <div class="flex justify-end gap-3 pt-4">

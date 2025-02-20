@@ -18,7 +18,7 @@
         <!-- Header Section -->
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <div>
-                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Create Product</h1>
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-500">Create Product</h1>
                 <p class="mt-1 text-sm text-gray-600">Add a new product to your inventory</p>
             </div>
             
@@ -53,13 +53,13 @@
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
                                 <input type="text" name="name" id="name" value="{{ old('name') }}"
-                                       class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                       class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                             </div>
 
                             <div>
                                 <label for="qty" class="block text-sm font-medium text-gray-700 mb-1">Quantity in Stock</label>
                                 <input type="number" name="qty" id="qty" value="{{ old('qty') }}"
-                                       class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                       class="block w-full h-9 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                             </div>
                         </div>
 
@@ -70,7 +70,7 @@
                                     <span class="text-gray-500 sm:text-sm">₱</span>
                                 </div>
                                 <input type="number" step="0.01" name="price" id="price" value="{{ old('price') }}"
-                                       class="block w-full rounded-lg border-gray-300 pl-8 pr-4 focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                       class="block w-full h-9 rounded-lg border-gray-300 pl-8 pr-4 focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
                             </div>
                         </div>
 
